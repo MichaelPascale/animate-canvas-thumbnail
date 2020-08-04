@@ -1,0 +1,24 @@
+{
+  "name": "animate-canvas-thumbnail",
+  "version": "0.1.0",
+  "description": "Generate a thumbnail image of an Adobe Animate HTML5 Canvas object.",
+  "main": "index.js",
+  "keywords": [
+    "Adobe",
+    "Animate",
+    "HTML5",
+    "Canvas",
+    "Thumbnail",
+    "Image",
+    "Timeline",
+    "Movieclip",
+    "CreateJS",
+    "EaselJS"
+  ],
+  "author": "Michael Pascale",
+  "license": "BSD 2-Clause",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "puppeteer": "^5.2.1"
+  }
+}
