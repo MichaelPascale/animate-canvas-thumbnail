@@ -15,7 +15,7 @@ const node_canvas = require('canvas');
 const { Buffer } = require('buffer');
 
 // Default CreateJS path.
-let createPath = path.normalize('./lib/createjs.min.js');
+let createPath = path.join(__dirname, 'lib/createjs.min.js');
 
 /**
  * Generate a thumbnail of an Animate canvas object.
@@ -92,7 +92,7 @@ function DataURLToImage(dataurl, imagePath) {
             fs.writeFileSync(imagePath, Buffer.from(data[1], 'base64'));
         }
     } catch (err) {
-        console.log(`DataURLToImage: ${err.message}`);
+        console.error(`DataURLToImage: ${err.message}`);
     }
     return dataurl;
 }
